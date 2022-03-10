@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="jumbotron text-center">
+<h3>Emirin Bloğuna Hoş Geldiniz..</h3>
+<p>Bu blogta istediğiniz gibi takılabilirsiniz.<p>
+</div>
+<ul>
+    {% for number in numbers %}
+        <li>Articles Id: {{number.id}} - Title: {{number.title}} - Content: {{number.content}}</li>
+    {% endfor %}
+</ul>
+{% endblock body %}
